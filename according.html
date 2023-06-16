@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>according</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+        }
+        .according{
+            margin:50% auto;
+            width: 70%;
+            height: 250px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 20px;
+        }
+        .judulcontent{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .judulcontent a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            font-weight: 250;
+            text-transform: capitalize;
+        }
+        .judulcontent a:hover{
+            opacity: 0.5;
+        }
+        .teksaccording{
+            display: flex;
+            flex-direction: column;
+            gap:10px
+        }
+        .teksaccording p{
+            display:none;
+        }
+        .teksaccording p.active{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="according">
+            <div class="judulcontent">
+                <a href="" class="judul">paris</a>
+                <a href="" class="judul">jepang</a>
+                <a href="" class="judul">indonesia</a>
+            </div>
+            <div class="teksaccording">
+                <p>paris Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quis!</p>
+                <p>jepang Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, totam?</p>
+                <p>indonesia Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, accusamus.</p>
+            </div>
+        </div>
+    </div>
+    <script src="according.js"></script>
+</body>
+</html>
